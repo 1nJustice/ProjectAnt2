@@ -17,9 +17,11 @@ namespace ProjectAnt2
 
         public List<Requirement> Requirements { get => requirements; set => requirements = value; }
 
-        public InfSecRequirementConf(ref List<Requirement> requirements)
+        public InfSecRequirementConf(ref List<Requirement> requirements, string name)
         {
-            InitializeComponent();
+            
+            InitializeComponent(name);
+            
             this.requirements = requirements;
             foreach(Requirement requirement in requirements)
             {
