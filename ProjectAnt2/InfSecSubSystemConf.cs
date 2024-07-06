@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ProjectAnt2
 {
-    public partial class InfSecDescriptionConf : Form
+    public partial class InfSecSubSystemConf : Form
     {
         List<InfSecSubSystem> infSecSubSystems = new List<InfSecSubSystem>();
-        public InfSecDescriptionConf()
+        public InfSecSubSystemConf()
         {
             InitializeComponent();
             List<Requirement> requirements = new List<Requirement>();
@@ -38,8 +38,9 @@ namespace ProjectAnt2
         {
             string subSystemName = textBox1.Text;
             List<Requirement> requirements = new List<Requirement>();
-            using (InfSecRequirementConf infSecRequirementConf = new InfSecRequirementConf(ref requirements))
+            using (InfSecRequirementConf infSecRequirementConf = new InfSecRequirementConf(ref requirements, subSystemName))
             {
+                
                 if (infSecRequirementConf.ShowDialog() == DialogResult.OK)
                 {
                     InfSecSubSystem requirement = new InfSecSubSystem(subSystemName, requirements);
@@ -57,7 +58,7 @@ namespace ProjectAnt2
         {
             InfSecSubSystem secSubSystem = listBox1.SelectedItem as InfSecSubSystem;
             List<Requirement> requirements = secSubSystem.Requirements;
-            using (InfSecRequirementConf infSecRequirementConf = new InfSecRequirementConf(ref requirements))
+            using (InfSecRequirementConf infSecRequirementConf = new InfSecRequirementConf(ref requirements, secSubSystem.Name))
             {
                 if (infSecRequirementConf.ShowDialog() == DialogResult.OK)
                 {

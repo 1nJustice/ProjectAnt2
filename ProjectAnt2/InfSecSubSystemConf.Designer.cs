@@ -1,6 +1,6 @@
 ﻿namespace ProjectAnt2
 {
-    partial class InfSecDescriptionConf
+    partial class InfSecSubSystemConf
     {
         /// <summary>
         /// Required designer variable.
