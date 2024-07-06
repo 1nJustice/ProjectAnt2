@@ -5,7 +5,7 @@ namespace ProjectAnt2
         public Form1()
         {
             InitializeComponent();
-            InfSecDescriptionConf infSecDescriptionConf = new InfSecDescriptionConf();
+            InfSecSubSystemConf infSecDescriptionConf = new InfSecSubSystemConf();
             infSecDescriptionConf.Show();
         }
 
