@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent(string name)
+        private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -54,7 +54,7 @@
             this.listBox1.Location = new System.Drawing.Point(45, 81);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(276, 184);
-            this.listBox1.TabIndex = 1;
+            this.listBox1.TabIndex = 4;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label2
@@ -68,10 +68,11 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.richTextBox1.Location = new System.Drawing.Point(377, 81);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(303, 94);
-            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
             // label3
@@ -106,7 +107,7 @@
             this.OK.Location = new System.Drawing.Point(83, 290);
             this.OK.Name = "OK";
             this.OK.Size = new System.Drawing.Size(201, 29);
-            this.OK.TabIndex = 4;
+            this.OK.TabIndex = 5;
             this.OK.Text = "Сохранить список";
             this.OK.UseVisualStyleBackColor = true;
             this.OK.Click += new System.EventHandler(this.button2_Click);
@@ -125,7 +126,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "InfSecRequirementConf";
-            this.Text = "Подсистема " + name;
+            this.Text = "Подсистема ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

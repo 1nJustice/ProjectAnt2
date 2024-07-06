@@ -80,7 +80,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // InfSecDescriptionConf
+            // InfSecSubSystemConf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,8 +90,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
-            this.Name = "InfSecDescriptionConf";
-            this.Text = "InfSecDescriptionConf";
+            this.Name = "InfSecSubSystemConf";
+            this.Text = "InfSecSubSystemConf";
             this.ResumeLayout(false);
             this.PerformLayout();
 
